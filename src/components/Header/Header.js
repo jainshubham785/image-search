@@ -1,25 +1,19 @@
 /** @format */
 
-import React, { useState } from 'react'
-import '../Header/Header.css'
+import React, { useState } from 'react';
+import '../Header/Header.css';
 
 const Header = ({ searchPhotos }) => {
-	const [input, setInput] = useState('')
-	const [preSearch, setPreSearch] = useState([])
-	// const searchHistory = localStorage.getItem(JSON.parse('previousSearch'))
-	// console.log(searchHistory)
+	const [input, setInput] = useState('');
 
-	const handleChange = e => {
-		setInput(e.target.value)
-	}
+	const handleChange = (e) => {
+		setInput(e.target.value);
+	};
 
-	const handleSubmit = e => {
-		e.preventDefault()
-		searchPhotos(input)
-		input.length > 0 && setPreSearch([...preSearch, input])
-	}
-
-	localStorage.setItem('previousSearch', JSON.stringify(preSearch))
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		searchPhotos(input);
+	};
 
 	return (
 		<>
@@ -38,16 +32,10 @@ const Header = ({ searchPhotos }) => {
 							<input className='header__search' type='submit' value='Search' />
 						</div>
 					</form>
-					<div className='preSearchBox'>
-						<li>Shubham</li>
-						<li>Pamil</li>
-						<li>Anmol</li>
-						<li>Somit</li>
-					</div>
 				</div>
 			</div>
 		</>
-	)
-}
+	);
+};
 
-export default Header
+export default Header;

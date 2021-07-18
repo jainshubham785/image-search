@@ -33,30 +33,16 @@
 	font-size: 20px;
 	padding: 5px 20px;
 	border: none;
-	border-bottom: 1px solid grey;
-	/* border-radius: 20px 0px 0px 20px; */
 }
 
 .header__search {
 	font-size: 20px;
 	border: none;
-	border-bottom: 1px solid grey;
 	background-color: white;
-	/* border-radius: 0px 20px 20px 0px; */
 }
 .header__search:hover {
 	color: teal;
 	cursor: pointer;
-}
-.preSearchBox {
-	width: 100%;
-	margin: auto;
-	background-color: white;
-	display: none;
-}
-.preSearchBox li {
-	list-style: none;
-	padding: 10px 20px;
 }
 
 @media (max-width: 600px) {
