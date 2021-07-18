@@ -83,6 +83,7 @@ const Gallery = ({ input }) => {
 								style={{
 									overlay: {
 										backgroundColor: 'lightgray',
+opacity:'0.5'
 									},
 									content: {
 										backgroundColor: 'white',
